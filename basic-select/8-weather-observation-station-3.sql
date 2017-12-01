@@ -12,5 +12,5 @@ LONG_W : NUMBER
 where LAT_N is the northern latitude and LONG_W is the western longitude
 */
 
-SELECT DISTINCT(s.city) FROM station s
+SELECT distinct(s.city) FROM station s
 WHERE  mod(s.id, 2) = 0;
