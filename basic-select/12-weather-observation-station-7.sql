@@ -15,5 +15,6 @@ LONG_W : NUMBER
 where LAT_N is the northern latitude and LONG_W is the western longitude
 */
 
+/* use % for the string and just change vowel */
 SELECT distinct s.city FROM station s
 WHERE s.city like '%a' or s.city like '%e' or s.city like '%i' or s.city like '%o' or s.city like '%u';
