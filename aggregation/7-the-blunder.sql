@@ -16,5 +16,5 @@ Name: String
 Salary: Integer
 */
 
-SELECT (round(avg(e.salary))-round(avg(replace(e.salary, "0", "")))) as error
+SELECT (round(avg(e.salary)) - round(avg(replace(e.salary, "0", "")))) as error
 FROM employees e;
