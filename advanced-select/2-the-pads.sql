@@ -22,3 +22,13 @@ Occupation: String
 Occupation will only contain one of the following values: Doctor, Professor, Singer or Actor.
 */
 
+/* 
+use concat to contact each experssion like this concat(exp1, exp2, exp3)
+use substring to choose substring from a strung  such as (string, start position, extract character numbers)
+*/
+SELECT concat(o.name, '(', substring(o.occupation, 1, 1), ')') as name FROM occupations o
+order by name;
+SELECT concat('There are a total of', ' ', count(a.occupation), ' ', lower(a.occupation),'s.') as total
+FROM occupations a
+group by a.occupation
+order by total;
